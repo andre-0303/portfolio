@@ -6,7 +6,7 @@ Esse é um portfólio pessoal profissional.
 | -------------  | --- |
 | :sparkles: Nome        | **Portfólio Profissional**
 | :label: Tecnologias | HTML, CSS, JavaScript
-| :rocket: URL         | 
+| :rocket: URL         | https://andre-0303.github.io/portfolio/
 
 ## Tecnologias
 
