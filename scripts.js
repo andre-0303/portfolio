@@ -17,7 +17,7 @@ function enviarWhatsApp(event) {
 const txtEfeito = document.querySelector(".txtEfeito");
 const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-let intervalo = null;
+let intervalo =     null;
 
 if (txtEfeito) {
     txtEfeito.addEventListener("mouseover", (e) => {
