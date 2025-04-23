@@ -14,6 +14,21 @@ function enviarWhatsApp(event) {
 
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const btnHamburguer = document.querySelector(".hamburguer");
+    const menu          = document.querySelector(".menu");
+  
+    btnHamburguer.addEventListener("click", () => {
+      menu.classList.toggle("menu--aberto");
+    });
+  
+    /* fecha o menu quando um link é clicado */
+    document.querySelectorAll(".menu-link").forEach(link => {
+      link.addEventListener("click", () => menu.classList.remove("menu--aberto"));
+    });
+  });
+  
+
 const txtEfeito = document.querySelector(".txtEfeito");
 const alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

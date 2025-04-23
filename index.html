@@ -1,158 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio | Bandeira Dev</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="particulas"></div>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Bandeira Dev</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="particulas"></div>
 
-    <nav class="navegation">
-      <ul class="menu">
-        <li><a href="#inicio" class="menu-link">Início</a></li>
-        <li><a href="#sobre" class="menu-link">Sobre</a></li>
-        <li><a href="#projetos" class="menu-link">Projetos</a></li>
-        <li><a href="#contatos" class="menu-link">Contatos</a></li>
-      </ul>
-    </nav>
+  <nav class="navegation">
+    <!-- botão hambúrguer (visível só no mobile pelo CSS) -->
+    <button class="hamburguer" aria-label="Abrir menu">☰</button>
 
-    <main id="inicio" class="cabecalho">
-      <img src="./img/profile.png" alt="profile" class="foto-perfil" />
-      <h1>
-        <span class="txtEfeito" data-value="André Bandeira"
-          >André Bandeira</span
-        >
-      </h1>
-      <p class="cabecalho-sub-title">Desenvolvedor Front End</p>
-    </main>
+    <ul class="menu">
+      <li><a href="#inicio"    class="menu-link">Início</a></li>
+      <li><a href="#sobre"     class="menu-link">Sobre</a></li>
+      <li><a href="#projetos"  class="menu-link">Projetos</a></li>
+      <li><a href="#contatos"  class="menu-link">Contatos</a></li>
+    </ul>
+  </nav>
 
-    <section id="sobre" class="sobre">
-      <h2 class="sobre-title">Sobre mim</h2>
-      <div class="sobre-caixa">
-        <p class="sobre-p">
-          Sou um desenvolvedor Front-End com experiência em React, JavaScript e
-          desenvolvimento web moderno. Meu objetivo é criar interfaces
-          intuitivas e acessíveis que proporcionem melhor experiência para os
-          usuários.
-        </p>
-      </div>
-    </section>
+  <main id="inicio" class="cabecalho">
+    <img src="./img/profile.png" alt="profile" class="foto-perfil" />
+    <h1><span class="txtEfeito" data-value="André Bandeira">André Bandeira</span></h1>
+    <p class="cabecalho-sub-title">Desenvolvedor Front‑End</p>
+  </main>
 
-    <section id="projetos" class="projetos">
-      <h2 class="projetos-title">Meus Projetos</h2>
-      <div class="projetos-caixas">
-        <div class="projetos-card">
-          <img
-            src="./img/projeto1.png"
-            alt="project1"
-            class="projetos-imagem"
-          />
-          <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Slider Fanta Brasil</h3>
-            <p class="p-projetos">
-              Slider das latas de refrigerante da Fanta Brasil, com um design
-              agradável e interessante.
-            </p>
-            <a href="https://github.com/andre-0303/fanta-brasil"
-              >Link do projeto</a
-            >
-          </div>
-        </div>
+  <section id="sobre" class="sobre">
+    <h2 class="sobre-title">Sobre mim</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-p">
+        Sou um desenvolvedor Front‑End com experiência em React, JavaScript e
+        desenvolvimento web moderno. Meu objetivo é criar interfaces
+        intuitivas e acessíveis que proporcionem melhor experiência aos usuários.
+      </p>
+    </div>
+  </section>
 
-        <div class="projetos-card">
-          <img src="./img/image.png" alt="project2" class="projetos-imagem" />
-          <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Site do Curso de Informática</h3>
-            <p class="p-projetos">
-              Feito em NextJs com Tailwind CSS, o site do curso de informática
-              tem como objetivo apresentar o curso e suas informações.
-            </p>
-            <a href="https://github.com/andre-0303/infor-eeep"
-              >Link do projeto</a
-            >
-          </div>
-        </div>
+  <section id="projetos" class="projetos">
+    <h2 class="projetos-title">Meus Projetos</h2>
 
-        <div class="projetos-card">
-          <img
-            src="./img/image_copy.png"
-            alt="project3"
-            class="projetos-imagem"
-          />
-          <div class="caixa-textos-projetos">
-            <h3 class="info-projetos">Login com React Native</h3>
-            <p class="p-projetos">
-              Este é um projeto de autenticação simples utilizando React Native
-              com Expo, integração com Supabase e banco de dados PostgreSQL.
-            </p>
-            <a href="https://github.com/andre-0303/login-react-native"
-              >Link do projeto</a
-            >
-          </div>
+    <div class="projetos-caixas">
+      <!-- Projeto 1 -->
+      <div class="projetos-card">
+        <img src="./img/projeto1.png" alt="project1" class="projetos-imagem" />
+        <div class="caixa-textos-projetos">
+          <h3 class="info-projetos">Slider Fanta Brasil</h3>
+          <p class="p-projetos">
+            Slider das latas de refrigerante da Fanta Brasil, com um design
+            agradável e interessante.
+          </p>
+          <a href="https://github.com/andre-0303/fanta-brasil" target="_blank">Link do projeto</a>
         </div>
       </div>
-    </section>
 
-    <section id="contatos" class="contatos">
-      <h2 class="contatos-title">Entre em contato</h2>
-      <form class="form-contato" id="form">
-        <div class="grupo-form">
-          <input
-            type="text"
-            id="nome"
-            name="name"
-            required
-            placeholder="Digite seu nome"
-            class="campo-form"
-          />
+      <!-- Projeto 2 -->
+      <div class="projetos-card">
+        <img src="./img/image.png" alt="project2" class="projetos-imagem" />
+        <div class="caixa-textos-projetos">
+          <h3 class="info-projetos">Site do Curso de Informática</h3>
+          <p class="p-projetos">
+            Feito em Next.js com Tailwind CSS, o site do curso de informática
+            tem como objetivo apresentar o curso e suas informações.
+          </p>
+          <a href="https://github.com/andre-0303/infor-eeep" target="_blank">Link do projeto</a>
         </div>
-        <div class="grupo-form">
-          <textarea
-            placeholder="Digite sua mensagem"
-            class="campo-form"
-            id="mensagem"
-            rows="6"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          class="botao-form"
-          onclick="enviarWhatsApp(event )"
-        >
-          Enviar no WhatsApp
-        </button>
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div class="social-footer">
-        <a
-          href="https://github.com/andre-0303"
-          target="_blank"
-          aria-label="GitHub"
-        >
-          <img src="./img/github.png" alt="GitHub" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/andr%C3%A9-bandeira/"
-          target="_blank"
-          aria-label="LinkedIn"
-        >
-          <img src="./img/linkedin.png" alt="LinkedIn" />
-        </a>
-        <a
-          href="https://www.instagram.com/andre_2102g"
-          target="_blank"
-          aria-label="Instagram"
-        >
-          <img src="./img/insta.png" alt="Instagram" />
-        </a>
       </div>
-      <p class="footer-text">© 2024 - Desenvolvido por André Bandeira</p>
-    </footer>
-  </body>
-  <script src="./scripts.js"></script>
+
+      <!-- Projeto 3 -->
+      <div class="projetos-card">
+        <img src="./img/image_copy.png" alt="project3" class="projetos-imagem" />
+        <div class="caixa-textos-projetos">
+          <h3 class="info-projetos">Login com React Native</h3>
+          <p class="p-projetos">
+            Autenticação simples usando React Native + Expo, Supabase e PostgreSQL.
+          </p>
+          <a href="https://github.com/andre-0303/login-react-native" target="_blank">Link do projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatos" class="contatos">
+    <h2 class="contatos-title">Entre em contato</h2>
+    <form class="form-contato" id="form">
+      <div class="grupo-form">
+        <input type="text" id="nome" name="name" required placeholder="Digite seu nome" class="campo-form" />
+      </div>
+      <div class="grupo-form">
+        <textarea id="mensagem" rows="6" placeholder="Digite sua mensagem" class="campo-form"></textarea>
+      </div>
+      <button type="submit" class="botao-form" onclick="enviarWhatsApp(event)">
+        Enviar no WhatsApp
+      </button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="social-footer">
+      <a href="https://github.com/andre-0303"              target="_blank" aria-label="GitHub"><img src="./img/github.png"   alt="GitHub"   /></a>
+      <a href="https://www.linkedin.com/in/andr%C3%A9-bandeira/" target="_blank" aria-label="LinkedIn"><img src="./img/linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://www.instagram.com/andre_2102g"      target="_blank" aria-label="Instagram"><img src="./img/insta.png"    alt="Instagram"/></a>
+    </div>
+    <p class="footer-text">© 2024 - Desenvolvido por André Bandeira</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
